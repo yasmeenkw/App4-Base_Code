@@ -6,8 +6,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Author 1
-Author 2
+Author 1: Yasmeen Washington
  
 Further Information:
 http://diystream.cns.utexas.edu/
@@ -17,10 +16,11 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of this code is to help someone who is experiencing symptoms narrow down if they may have chronic fatigue or anemia. The app will calculate the probability of either condition based on how the app questions are answered.
  
 Known Issues:
-blah, blah, blah, blah
+none as of now
+<!-- updated and filled in the known issues and brief description sections-->
 -->
 
    <head> 
@@ -34,40 +34,40 @@ blah, blah, blah, blah
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
-	var allergyPercent = 0;
-	var coldPercent = 0;
+        var anemia_count = 0;
+        var fatigue_count = 0;
+	var anemiaPercent = 0;
+	var fatiguePercent = 0;
 
 	
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert(allergy_count);
+        function anemiaAdd(){
+            anemia_count = anemia_count + 1;
+		alert(anemia_count);
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function fatigueAdd(){
+            fatigue_count = fatigue_count + 1;
         }
 	
-	 function allergyCalculations(){
-            allergyPercent = (allergy_count /4)* 100;
+	 function anemiaCalculations(){
+            anemiaPercent = (anemia_count /4)* 100;
 
         }
 
-       function coldCalculations(){
-            coldPercent = (cold_count /4)* 100;
+       function fatigueCalculations(){
+            fatiguePercent = (fatigue_count /4)* 100;
         }
 	
  	 function Results(){
-            allergyCalculations();
-	    coldCalculations();
+            anemiaCalculations();
+	    fatigueCalculations();
 	var resultText = document.getElementById("results");
-resultText.innerHTML = "Probability it is allergies =" + allergyPercent+ "<br> Probability it is a cold =" + coldPercent; 
+resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Probability it is chronic fatigue =" + fatiguePercent; 
         }
   </script>
 
-	<!--I added a percent sign to the results-->
+	<!--I changed the code functions from "Allergy" and "cold" to "anemia" and "fatigue"-->
 
 <style>	
 .body {
@@ -93,8 +93,8 @@ resultText.innerHTML = "Probability it is allergies =" + allergyPercent+ "<br> P
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
-</div>
+	<h1>Anemia or Chronic Fatigue?</h1>
+</div> <!-- changed the title to "anemia or chronic fatigue" from "allergies or cold?"-->
 	
 <div id="content" class="w3-container">
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
