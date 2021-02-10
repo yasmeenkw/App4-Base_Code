@@ -92,11 +92,11 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Anemia or Chronic Fatigue?</h1>
-</div> <!-- changed the title to "anemia or chronic fatigue" from "allergies or cold?"-->
+	<h1>Anemia or Chronic Fatigue Syndrome?</h1>
+</div> <!-- changed the title to "anemia or chronic fatigue syndrome" from "allergies or cold?"-->
 	
 <div id="content" class="w3-container">
-	<p>If you've been feeling run down and are wondering if you could be anemic or suffering from chronic fatigue, answer a few quick questions and find out!</p>
+	<p>If you've been feeling run down and are wondering if you could be anemic or suffering from chronic fatigue syndrome, answer a few quick questions and find out!</p>
 	<!--added a new title here-->
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
@@ -114,15 +114,14 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 	
     	<div id="content" class="w3-container">
        <div id="content" class="w3-container">
-	<p>Are your eyes watery or itchy?</p>    
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<p>Are your hands and feet cold?</p>    
+	<a href="#two"  onclick="anemiaAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#two"  onclick="fatigueAdd();" class="w3-btn w3-black">No</a>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
 	 </div>
-	<!--I added the question content "are your eyes itchy or watery?" I also added the code for a yes or no button!-->
-	<!--I went back and added a footer-->
+	<!--I added the question content "Are your hands and feet cold?" and changed the functions from fatigue to anemia-->
 </div>
 
 <div class="page" id="two">
@@ -132,10 +131,10 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?</p>
-		<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
-         	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
-	<!--I added the question content "Do you have a fever?" and added a yes/no button-->
+		<p>Do you feel exhausted even after sleeping?</p>
+		<a href="#three"  onclick="anemiaAdd();" class="w3-btn w3-black">No</a>
+         	<a href="#three"  onclick="fatigueAdd();" class="w3-btn w3-black">Yes</a>
+	<!--I added the question content "Do you feel exhausted even after sleeping?" and changed the functions to fatigue and anemia-->
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer></div>
@@ -146,32 +145,31 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a sore throat?</p>
-		<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> No</a>
-         	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
-	<!--I added the third page base and then typed in the question content "Do you have a sore throat?" and added a yes/no button-->
+		<p>Is your memory and concentration worsening?</p>
+		<a href="#four"  onclick="anemiaAdd();" class="w3-btn w3-black"> No</a>
+         	<a href="#four"  onclick="fatigueAdd();" class="w3-btn w3-black">Yes</a>
+	<!--I added the question content "Is your memory and concentration worsening?" and changed the functions to fatigue and anemia-->
 	<footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
 	</div>	
 </div>
-	<!--I added a footer-->
+	
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Are your symptoms seasonal or chronic?</p>
+		<p>Are you experiencing shortness of breath?</p>
 		<a href="#five"  onclick="Results();" class="w3-btn w3-black"> Yes</a>
          	<a href="#five"  onclick="Results();" class="w3-btn w3-black">No</a>
-	<!--I added the fourth page base and then typed in the question content "Are your symptoms seasonal or chronic?" and added a yes/no button-->
+	<!--I added the question content "Are you experiencing shortness of breath?" and changed the functions to fatigue and anemia-->
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 		<p>DIY!</p>
 	</footer>
 	
 	</div>	
-	<!--I added a footer-->
 	
 	
 </div>
