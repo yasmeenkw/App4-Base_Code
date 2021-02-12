@@ -31,11 +31,12 @@ none as of now
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-
+<!--I changed the code functions from "Allergy" and "cold" to "anemia" and "fatigue"-->
+<!--The code below is responsible for counting each response that helps identify their percentage for having either condition. This is done by taking the sum and dividing it by four then multiplying by 100.-->
 <script>
         var anemia_count = 0;
         var fatigue_count = 0;
-	var anemiaPercent = 0;
+	var anemiaPercent = 0; 
 	var fatiguePercent = 0;
 
 	
@@ -66,8 +67,7 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
         }
   </script>
 
-	<!--I changed the code functions from "Allergy" and "cold" to "anemia" and "fatigue"-->
-<!--I included the code below for where the picture will go in lines 75-80-->
+<!--The code below is responsible for the appearence of the web app.-->
 <style>	
 .body {
      margin: 0em;
@@ -95,38 +95,37 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 	<h1>Anemia or Chronic Fatigue Syndrome?</h1>
 
 </div> <!-- changed the title to "anemia or chronic fatigue syndrome" from "allergies or cold?"-->
-	<!--I included the code for an image below, I moved it-->
-<div id="content" class="w3-container">
-	<p>If you've been feeling run down and are wondering if you could be anemic or suffering from chronic fatigue syndrome, answer a few quick questions and find out!</p>
-	<!--added a new title here-->
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	<div id="content" class="w3-container">
+		<p>If you've been feeling run down and are wondering if you could be anemic or suffering from chronic fatigue syndrome, answer a few quick questions and find out!</p>
+		<!--added a new title here-->
+		<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
-       <img src="Anemia.jpg" alt="Anemia symptoms" style="width:200px;height:240px;">
+     		<img src="Anemia.jpg" alt="Anemia symptoms" style="width:200px;height:240px;">
             	
         	
 
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
+		<footer class="w3-bottom w3-container w3-flat-carrot">
+			<p>DIY!</p>
+		</footer>
 	
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
 	</div>
 	
-    	<div id="content" class="w3-container">
-       <div id="content" class="w3-container">
-	<p>Are your hands and feet cold?</p>    
-	<a href="#two"  onclick="anemiaAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#two"  onclick="fatigueAdd();" class="w3-btn w3-black">No</a>
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
-	 </div>
+    		<div id="content" class="w3-container">
+      		<div id="content" class="w3-container">
+		<p>Are your hands and feet cold?</p>    
+		<a href="#two"  onclick="anemiaAdd();" class="w3-btn w3-black"> Yes</a>
+        	<a href="#two"  onclick="fatigueAdd();" class="w3-btn w3-black">No</a>
+		<footer class="w3-bottom w3-container w3-flat-carrot">
+			<p>DIY!</p>
+		</footer>
+		 </div>
 	<!--I added the question content "Are your hands and feet cold?" and changed the functions from fatigue to anemia-->
 </div>
 
@@ -136,29 +135,30 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 	
 	</div>
 	
-	<div id="content" class="w3-container">
+		<div id="content" class="w3-container">
 		<p>Do you feel exhausted even after sleeping?</p>
 		<a href="#three"  onclick="anemiaAdd();" class="w3-btn w3-black">No</a>
          	<a href="#three"  onclick="fatigueAdd();" class="w3-btn w3-black">Yes</a>
 	<!--I added the question content "Do you feel exhausted even after sleeping?" and changed the functions to fatigue and anemia-->
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer></div>
+		<footer class="w3-bottom w3-container w3-flat-carrot">
+			<p>DIY!</p>
+		</footer>
+		</div>
 	
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
 	
-	<div id="content" class="w3-container">
+		<div id="content" class="w3-container">
 		<p>Is your memory and concentration worsening?</p>
 		<a href="#four"  onclick="anemiaAdd();" class="w3-btn w3-black"> No</a>
          	<a href="#four"  onclick="fatigueAdd();" class="w3-btn w3-black">Yes</a>
-	<!--I added the question content "Is your memory and concentration worsening?" and changed the functions to fatigue and anemia-->
-	<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
-	</div>	
+		<!--I added the question content "Is your memory and concentration worsening?" and changed the functions to fatigue and anemia-->
+		<footer class="w3-bottom w3-container w3-flat-carrot">
+			<p>DIY!</p>
+		</footer>
+		</div>	
 </div>
 	
 <div class="page" id="four">
@@ -166,37 +166,31 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 		<h1>Question 4</h1>
 	</div>
 	
-	<div id="content" class="w3-container">
+		<div id="content" class="w3-container">
 		<p>Are you experiencing shortness of breath?</p>
 		<a href="#five"  onclick="Results();" class="w3-btn w3-black"> Yes</a>
          	<a href="#five"  onclick="Results();" class="w3-btn w3-black">No</a>
-	<!--I added the question content "Are you experiencing shortness of breath?" and changed the functions to fatigue and anemia-->
-		<!--I accidentally forgot to type in the function correctly and was gettin wrong results so I fixed it.-->
+		<!--I added the question content "Are you experiencing shortness of breath?" and changed the functions to fatigue and anemia-->
 		<footer class="w3-bottom w3-container w3-flat-carrot">
-		<p>DIY!</p>
-	</footer>
-	
-	</div>	
-	
-	
-	
+			<p>DIY!</p>
+		</footer>
+		</div>	
 </div>
 	
-	<div class="page" id="five">
+<div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
 	
-	<div id="content" class="w3-container">
-	<p div id="results"></p>
-	<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
-	</div>		
-	<!--I added the fifth page base and then typed in the results function-->
+		<div id="content" class="w3-container">
+		<p div id="results"></p>
+		<footer class="w3-bottom w3-container w3-flat-carrot">
+			<p>DIY!</p>
+		</footer>
+		</div>		
+		<!--I added the fifth page base and then typed in the results function-->
 	</div>	
 
-<!--I added a footer-->
 
 
    </body>
