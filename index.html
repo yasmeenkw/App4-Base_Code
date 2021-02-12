@@ -94,16 +94,16 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Anemia or Chronic Fatigue Syndrome?</h1>
 
-</div> <!-- changed the title to "anemia or chronic fatigue syndrome" from "allergies or cold?"-->
+</div> <!-- changed the title to "anemia or chronic fatigue syndrome" from "allergies or cold?". Below is the code for the title page.-->
 	<div id="content" class="w3-container">
 		<p>If you've been feeling run down and are wondering if you could be anemic or suffering from chronic fatigue syndrome, answer a few quick questions and find out!</p>
-		<!--added a new title here-->
+		<!--added a new title here for page one and below is a disclaimer-->
 		<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
 		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-	
+		<!--added an image here, there's alternate text and the sizing for it-->
      		<img src="Anemia.jpg" alt="Anemia symptoms" style="width:200px;height:240px;">
             	
         	
@@ -111,7 +111,8 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
-	
+<!--Below is the code for page 1 and it includes the header and footer as well as the question being asked-->
+<!--I added the question 1 content "Are your hands and feet cold?" and changed the functions from fatigue to anemia-->
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
@@ -119,16 +120,17 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 	
     		<div id="content" class="w3-container">
       		<div id="content" class="w3-container">
-		<p>Are your hands and feet cold?</p>    
+		<p>Are your hands and feet cold?</p>   <!--code on the next line records the users response to help calculate the result--> 
 		<a href="#two"  onclick="anemiaAdd();" class="w3-btn w3-black"> Yes</a>
         	<a href="#two"  onclick="fatigueAdd();" class="w3-btn w3-black">No</a>
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
 		 </div>
-	<!--I added the question content "Are your hands and feet cold?" and changed the functions from fatigue to anemia-->
+	
 </div>
-
+<!--Below is the code for page 2 and it includes the header and footer as well as the question being asked-->
+<!--I added the question 2 content "Do you feel exhausted even after sleeping?" and changed the functions to fatigue and anemia-->
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -136,47 +138,49 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 	</div>
 	
 		<div id="content" class="w3-container">
-		<p>Do you feel exhausted even after sleeping?</p>
+		<p>Do you feel exhausted even after sleeping?</p>   <!--code on the next line records the users response to help calculate the result--> 
 		<a href="#three"  onclick="anemiaAdd();" class="w3-btn w3-black">No</a>
          	<a href="#three"  onclick="fatigueAdd();" class="w3-btn w3-black">Yes</a>
-	<!--I added the question content "Do you feel exhausted even after sleeping?" and changed the functions to fatigue and anemia-->
+
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
 		</div>
-	
+<!--Below is the code for page 3 and it includes the header and footer as well as the question being asked-->
+<!--I added the question content "Is your memory and concentration worsening?" and changed the functions to fatigue and anemia-->
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
 	
 		<div id="content" class="w3-container">
-		<p>Is your memory and concentration worsening?</p>
+		<p>Is your memory and concentration worsening?</p>    <!--code on the next line records the users response to help calculate the result--> 
 		<a href="#four"  onclick="anemiaAdd();" class="w3-btn w3-black"> No</a>
          	<a href="#four"  onclick="fatigueAdd();" class="w3-btn w3-black">Yes</a>
-		<!--I added the question content "Is your memory and concentration worsening?" and changed the functions to fatigue and anemia-->
+	
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
 		</div>	
 </div>
-	
+<!--Below is the code for page 4 and it includes the header and footer as well as the question being asked-->
+<!--I added the question content "Are you experiencing shortness of breath?" and changed the functions to fatigue and anemia-->
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
 	
 		<div id="content" class="w3-container">
-		<p>Are you experiencing shortness of breath?</p>
+		<p>Are you experiencing shortness of breath?</p>   <!--code on the next line records the users response to help calculate the result--> 
 		<a href="#five"  onclick="Results();" class="w3-btn w3-black"> Yes</a>
          	<a href="#five"  onclick="Results();" class="w3-btn w3-black">No</a>
-		<!--I added the question content "Are you experiencing shortness of breath?" and changed the functions to fatigue and anemia-->
+		
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
 		</div>	
 </div>
-	
+	   <!--The code below this is for the results page. there's a header and footer. line 186 is where the results will appear in the app--> 
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
@@ -188,7 +192,7 @@ resultText.innerHTML = "Probability it is anemia =" + anemiaPercent+ "<br> Proba
 			<p>DIY!</p>
 		</footer>
 		</div>		
-		<!--I added the fifth page base and then typed in the results function-->
+		
 	</div>	
 
 
